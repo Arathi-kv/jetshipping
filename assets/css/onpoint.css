@@ -8554,8 +8554,8 @@ ul {
 /* Mobile Slider */
 @media (max-width: 767px) {
     .main-slider .container {
-        padding-top: 80px;
-        padding-bottom: 50px;
+        padding-top: 60px;
+        padding-bottom: 40px;
     }
 
     .main-slider__title {
