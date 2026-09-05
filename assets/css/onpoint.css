@@ -2449,7 +2449,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--onpoint-extra);
+  background-color: var(--onpoint-base);
   border-radius: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -8540,4 +8540,7 @@ ul {
     .blog-two__title {
         font-size: 18px;
     }
+}
+.services-one__icon {
+  color: white;
 }
