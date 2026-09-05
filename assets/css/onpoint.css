@@ -8544,3 +8544,7 @@ ul {
 .services-one__icon {
   color: white;
 }
+
+.why-choose-one__features li i {
+    color:var(--onpoint-base)
+}
