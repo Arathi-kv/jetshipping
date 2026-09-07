@@ -1831,8 +1831,8 @@ ul {
 
 .main-slider .container {
   position: relative;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 244px;
+  padding-bottom: 250px;
   z-index: 30;
 }
 
@@ -8559,8 +8559,8 @@ ul {
     }
 
     .main-slider .container {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .main-slider__title {
