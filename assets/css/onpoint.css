@@ -24,7 +24,8 @@
   --onpoint-gray-rgb: 120, 120, 120;
   --onpoint-white: #ffffff;
   --onpoint-white-rgb: 255, 255, 255;
-  --onpoint-base: #C11425;
+  /*--onpoint-base: #C11425;*/
+  --onpoint-base: #fd6200;
   --onpoint-base-rgb: 193, 20, 37;
   --onpoint-black: #0F1B24;
   --onpoint-black-rgb: 15, 27, 36;
@@ -1921,7 +1922,7 @@ ul {
 .main-slider__title span {
   position: relative;
   display: inline-block;
-  color: #FFC000;
+  color: #fd6200;
 }
 
 .main-slider__title span:before {
@@ -1931,7 +1932,7 @@ ul {
   left: 0;
   right: 0;
   height: 5px;
-  background-color: #FFC000;
+  background-color: #fd6200;
 }
 
 .main-slider .swiper-slide-active .main-slider__title {
