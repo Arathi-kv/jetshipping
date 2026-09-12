@@ -8575,7 +8575,13 @@ ul {
     display: block;
 }
 
-
 .main-menu__nav-sidebar-icon .navSidebar-button{
   display:none;
+}
+
+@media (max-width: 767px) {
+    .contact-one__contact-list li .icon {
+        width: 50px;
+        height: 50px;
+    }
 }
