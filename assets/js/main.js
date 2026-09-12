@@ -277,8 +277,8 @@
   }
 
 
-  if ($(".contact-form-validated").length) {
-    $(".contact-form-validated").each(function () {
+ if ($(".contact-form-validated").not("#contactForm").length) {
+  $(".contact-form-validated").not("#contactForm").each(function () {
       let self = $(this);
       self.validate({
         // initialize the plugin
