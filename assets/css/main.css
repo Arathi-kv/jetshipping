@@ -8591,3 +8591,15 @@ ul {
         padding-bottom: 80px;
     }
 }
+
+.form-success-message {
+    display: none;
+    margin-top: 20px;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #198754;
+    background: #e8f7ee;
+    border: 1px solid #b7e4c7;
+    border-radius: 5px;
+}
