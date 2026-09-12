@@ -356,6 +356,8 @@ document.getElementById("contactForm").addEventListener("submit", async function
     };
 
     result.style.display = "block";
+    result.style.color = "#555";
+    result.style.background = "#f5f5f5";
     result.innerHTML = "Sending...";
 
     try {
@@ -374,29 +376,35 @@ document.getElementById("contactForm").addEventListener("submit", async function
 
         if (responseData.success) {
 
+            form.reset();
+
+            result.style.display = "block";
+            result.style.color = "#198754";
+            result.style.background = "#e8f7ee";
+
             result.innerHTML =
                 "Thank you! Your message has been submitted successfully.";
 
-            result.style.color = "#198754";
-
-            form.reset();
-
         } else {
+
+            result.style.display = "block";
+            result.style.color = "#dc3545";
+            result.style.background = "#fce8e8";
 
             result.innerHTML =
                 responseData.message || "Unable to send your message.";
-
-            result.style.color = "#dc3545";
         }
 
     } catch (error) {
 
         console.error("Error:", error);
 
+        result.style.display = "block";
+        result.style.color = "#dc3545";
+        result.style.background = "#fce8e8";
+
         result.innerHTML =
             "Unable to send your message. Please try again.";
-
-        result.style.color = "#dc3545";
     }
 });
 </script>
