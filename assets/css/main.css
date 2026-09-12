@@ -8585,3 +8585,9 @@ ul {
         height: 50px;
     }
 }
+
+@media (max-width: 767px) {
+    .google-map-one {
+        padding-bottom: 80px;
+    }
+}
