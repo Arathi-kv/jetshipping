@@ -338,12 +338,37 @@
             </section>
             <!-- Contact Two End -->
 
-           <script>
+       <script>
 document.getElementById("contactForm").addEventListener("submit", async function (e) {
     e.preventDefault();
 
     const form = this;
-   const result = document.getElementById("contactResult");
+    const result = document.getElementById("contactResult");
+
+    const requiredFields = form.querySelectorAll(
+        "input[required], textarea[required]"
+    );
+
+    let isValid = true;
+
+    
+   // Validate required fields and email format
+    requiredFields.forEach(function (field) {
+    if (!field.value.trim() || !field.checkValidity()) {
+        field.classList.add("invalid");
+        isValid = false;
+    } else {
+        field.classList.remove("invalid");
+    }
+});
+
+if (!isValid) {
+    result.style.display = "block";
+    result.style.color = "#dc3545";
+    result.style.background = "#fce8e8";
+    result.innerHTML = "Please complete all required fields with a valid email address.";
+    return;
+}
 
     const formData = new FormData(form);
 
@@ -375,37 +400,53 @@ document.getElementById("contactForm").addEventListener("submit", async function
         const responseData = await response.json();
 
         if (responseData.success) {
-
             form.reset();
+
+            // Remove validation borders
+            requiredFields.forEach(function (field) {
+                field.classList.remove("invalid");
+            });
 
             result.style.display = "block";
             result.style.color = "#198754";
             result.style.background = "#e8f7ee";
-
             result.innerHTML =
                 "Thank you! Your message has been submitted successfully.";
 
         } else {
-
             result.style.display = "block";
             result.style.color = "#dc3545";
             result.style.background = "#fce8e8";
-
             result.innerHTML =
                 responseData.message || "Unable to send your message.";
         }
 
     } catch (error) {
-
         console.error("Error:", error);
 
         result.style.display = "block";
         result.style.color = "#dc3545";
         result.style.background = "#fce8e8";
-
         result.innerHTML =
             "Unable to send your message. Please try again.";
     }
+});
+
+// Remove red border as the user types
+document.querySelectorAll(
+    "#contactForm input[required], #contactForm textarea[required]"
+).forEach(function (field) {
+    field.addEventListener("input", function () {
+        if (this.value.trim()) {
+            this.classList.remove("invalid");
+        }
+
+        // Clear the validation message when the user starts correcting fields
+        const result = document.getElementById("contactResult");
+        if (result.innerHTML === "Please complete all required fields.") {
+            result.style.display = "none";
+        }
+    });
 });
 </script>
 

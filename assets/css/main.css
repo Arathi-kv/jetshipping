@@ -8437,7 +8437,7 @@ ul {
     }
 
     .contact-one__contact-list .content p {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
@@ -8564,7 +8564,7 @@ ul {
 }
 
 .main-menu__logo img {
-    width: 200px;
+    width: 180px;
     height: auto;
     display: block;
 }
@@ -8574,6 +8574,8 @@ ul {
     height: auto;
     display: block;
 }
+
+
 
 .main-menu__nav-sidebar-icon .navSidebar-button{
   display:none;
@@ -8602,4 +8604,51 @@ ul {
     background: #e8f7ee;
     border: 1px solid #b7e4c7;
     border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+    .page-header__bg::before {
+        border-radius: 0;
+    }
+}
+
+.whatsapp-chat-button {
+    position: fixed;
+    right: 48px;
+    bottom: 120px; /* above scroll-to-top button */
+    width: 55px;
+    height: 55px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.whatsapp-chat-button img {
+    width: 32px;
+    height: 32px;
+}
+
+.whatsapp-chat-button:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    .footer-widget__services {
+        margin-top: 30px;
+    }
+}
+/* Red border for empty required fields */
+.contact-two__form input.invalid,
+.contact-two__form textarea.invalid {
+    border: 1px solid #dc3545 !important;
+}
+
+/* Optional: highlight the field when focused */
+.contact-two__form input.invalid:focus,
+.contact-two__form textarea.invalid:focus {
+    border-color: #dc3545 !important;
+    outline: none;
 }
