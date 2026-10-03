@@ -9,11 +9,11 @@
       <!-- Open Graph -->
     <meta property="og:title" content="Reliable Logistics Solutions You Can Trust | Jet Shipping">
     <meta property="og:description" content="Jet Shipping provides reliable and professional transport solutions across the UK, delivering goods safely, efficiently, and on time.">
-    <meta property="og:image" content="https://arathi-kv.github.io/jetshipping/assets/images/share-thumbnail.png">
+    <meta property="og:image" content="https://jetshipping.co.uk/assets/images/share-thumbnail.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Jet Shipping - Reliable UK Logistics Solutions">
-    <meta property="og:url" content="https://arathi-kv.github.io/jetshipping/contact.html">
+    <meta property="og:url" content="https://jetshipping.co.uk/contact.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Jet Shipping">
     <meta property="og:locale" content="en_GB">
@@ -22,7 +22,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Reliable Logistics Solutions You Can Trust | Jet Shipping">
     <meta name="twitter:description" content="Jet Shipping provides reliable and professional transport solutions across the UK, delivering goods safely, efficiently, and on time.">
-    <meta name="twitter:image" content="https://arathi-kv.github.io/jetshipping/assets/images/share-thumbnail.png">
+    <meta name="twitter:image" content="https://jetshipping.co.uk/assets/images/share-thumbnail.png">
     <meta name="twitter:image:alt" content="Jet Shipping - Reliable UK Logistics Solutions">
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
@@ -110,7 +110,7 @@
                                         <button type="submit" class="thm-btn form-inner__btn">Submit Now</button>
                                     </div>
                                 </form>
-                                <div class="result" id="formResult"></div>
+                                <div class="result"></div>
                             </div>
                         </div>
                     </div>
@@ -217,9 +217,9 @@
                             </div>
                             <div class="content">
                                 <h3>Lets Talk us</h3>
-                                <p><a href="tel:07883638102">07883 638102</a></p>
-                                 <p><a href="tel:07904314125">07904 314125</a></p>
-                                 <p><a href="tel:07367335837">07367 335837</a></p>
+                                        <p><a href="tel:07904314125">07904 314125</a></p>
+                                        <p><a href="tel:07367335837">07367 335837</a></p>
+                                        <p><a href="tel:07883638102">07883 638102</a></p>
                             </div>
                         </li>
                         <li>
@@ -236,7 +236,7 @@
                                 <span class="icon-envolop email-icon"></span>
                             </div>
                             <div class="content">
-                                <h3>Send us email</h3>
+                                <h3>Email</h3>
                                 <p><a href="mailto:admin@jetshipping.co.uk">admin@jetshipping.co.uk</a></p>
                             </div>
                         </li>
@@ -319,7 +319,7 @@
                                     </div>
                                 </form>
 
-                              <div id="formResult" class="form-success-message"></div>
+                              <div id="contactResult" class="form-success-message"></div>
 
                             </div>
                         </div>
@@ -343,7 +343,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
     e.preventDefault();
 
     const form = this;
-    const result = document.getElementById("formResult");
+   const result = document.getElementById("contactResult");
 
     const formData = new FormData(form);
 
@@ -446,7 +446,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
                             </div>
                             <div class="content">
                                 <p>Need help?</p>
-                                <h3><a href="tel:07883638102">07883 638102</a></h3>
+                                <h3><a href="tel:07904314125">07904 314125</a></h3>
                             </div>
                         </div>
                     </div>
@@ -670,10 +670,10 @@ document.getElementById("contactForm").addEventListener("submit", async function
                                             <div class="icon">
                                                 <span class="icon-call phone-call"></span>
                                             </div>
-                                            <p>
-                                                <a href="tel:07883638102">07883 638102</a><br>
+                                             <p>
                                                 <a href="tel:07904314125">07904 314125</a><br>
-                                                <a href="tel:07367335837">07367 335837</a>
+                                                <a href="tel:07367335837">07367 335837</a><br>
+                                                <a href="tel:07883638102">07883 638102</a>
                                             </p>
                                         </li>
                                     </ul>
@@ -700,7 +700,14 @@ document.getElementById("contactForm").addEventListener("submit", async function
                     </div>
                 </div>
             </div>
-
+             <!-- WhatsApp Chat Button -->
+            <a 
+            href="https://wa.me/447904314125?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+            target="_blank"
+            class="whatsapp-chat-button"
+            aria-label="Chat with us on WhatsApp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+           </a>
         </footer>
         <!--Site Footer End-->
 
@@ -729,7 +736,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
-                    <a href="tel:07883638102">07883 638102</a><br>
+                    <a href="tel:07904314125">07904 314125</a><br>
                 </li>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
